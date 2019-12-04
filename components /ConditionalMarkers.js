@@ -1,7 +1,7 @@
 import React from "react";
 import MapView, { Marker } from "react-native-maps";
 import { StyleSheet, View, Dimensions, Text } from "react-native";
-import { Permissions, Location } from "expo";
+// import { Permissions, Location } from "expo";
 
 
 createMarkers() {
@@ -22,18 +22,18 @@ createMarkers() {
   });
 }
 
-createvendors() {
-  const {vendors} = this.state;
-  return vendors.map(member => {
-    const {name, color} = member.authData;
-    return (
-      <View key={vendor.id} style={styles.vendor}>
-        <View style={[styles.avatar, {backgroundColor: color}]}/>
-        <Text style={styles.vendorname}>{name}</Text>
-      </View>
-    );
-  });
-}
+// createvendors() {
+//   const {vendors} = this.state;
+//   return vendors.map(member => {
+//     const {name, color} = member.authData;
+//     return (
+//       <View key={vendor.id} style={styles.vendor}>
+//         <View style={[styles.avatar, {backgroundColor: color}]}/>
+//         <Text style={styles.vendorname}>{name}</Text>
+//       </View>
+//     );
+//   });
+// }
 
 
 const styles = StyleSheet.create({
