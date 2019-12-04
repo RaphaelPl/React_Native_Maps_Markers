@@ -35,20 +35,58 @@ createvendors() {
   });
 }
 
-member: {
-  flexDirection: 'row',
-  justifyContent: 'center',
-  alignItems: 'center',
-  backgroundColor: 'rgba(255,255,255,1)',
-  borderRadius: 20,
-  height: 30,
-  marginTop: 10,
+
+const styles = StyleSheet.create({
+  container: {
+    ...StyleSheet.absoluteFillObject,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
+  map: {
+    ...StyleSheet.absoluteFillObject,
+  },
+  bubble: {
+    flex: 1,
+    backgroundColor: 'rgba(255,255,255,0.7)',
+    paddingHorizontal: 18,
+    paddingVertical: 12,
+    borderRadius: 20,
+    marginRight: 20,
+  },
+  button: {
+    width: 80,
+    paddingHorizontal: 12,
+    alignItems: 'center',
+    marginHorizontal: 10,
+  },
+  buttonContainer: {
+    flexDirection: 'row',
+    marginVertical: 20,
+    backgroundColor: 'transparent',
+    marginBottom: 400,
+  },
+  members: {
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+    width: '100%',
+    paddingHorizontal: 10,
 },
-memberName: {
-  marginHorizontal: 10,
-},
-avatar: {
-  height: 30,
-  width: 30,
-  borderRadius: 15,
-}
+        member: {
+          flexDirection: 'row',
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: 'rgba(255,255,255,1)',
+          borderRadius: 20,
+          height: 30,
+          marginTop: 10,
+        },
+        memberName: {
+          marginHorizontal: 10,
+        },
+        avatar: {
+          height: 30,
+          width: 30,
+          borderRadius: 15,
+        }
+});
